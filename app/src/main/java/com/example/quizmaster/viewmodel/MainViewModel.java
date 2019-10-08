@@ -1,6 +1,8 @@
 package com.example.quizmaster.viewmodel;
 
 import android.app.Application;
+import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
@@ -17,6 +19,7 @@ public class MainViewModel extends AndroidViewModel {
     public MainViewModel(@NonNull Application application) {
         super(application);
         repo = Repository.getInstance();
+
     }
 
     public List<Question> getQuestions() {

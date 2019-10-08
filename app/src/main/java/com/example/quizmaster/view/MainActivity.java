@@ -1,6 +1,7 @@
 package com.example.quizmaster.view;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,6 +39,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnChoice3 = findViewById(R.id.btn_choice_three);
         btnChoice4 = findViewById(R.id.btn_choice_four);
 
+        btnChoice1.setOnClickListener(this);
+        btnChoice2.setOnClickListener(this);
+        btnChoice3.setOnClickListener(this);
+        btnChoice4.setOnClickListener(this);
+
         // Initialize viewmodel
         viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
@@ -73,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+
         String selectedChoice;
         switch (view.getId()) {
             case R.id.btn_choice_one:
@@ -94,10 +101,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private void answerSelected(String selectedChoice) {
+    private void answerSelected(String answer) {
         // pass selected and correct answer to viewmodel,
         // viewmodel will tell us if it is indeed a correct answer
-        boolean isCorrectAnswer = viewModel.isAnswerCorrect(selectedChoice, correctAnswer);
+        boolean isCorrectAnswer = viewModel.isAnswerCorrect(answer, correctAnswer);
 
         // If statement to show user if they were right or wrong
         if (isCorrectAnswer) {
