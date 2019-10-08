@@ -7,10 +7,10 @@
     android:padding="10dp">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_choice_one"
+        android:id="@+id/btn_choice_one"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_choice_two"
+        app:layout_constraintBottom_toTopOf="@id/btn_choice_two"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cv_question_holder"
@@ -18,35 +18,35 @@
         tools:text="Nerds" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_choice_two"
+        android:id="@+id/btn_choice_two"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_choice_three"
+        app:layout_constraintBottom_toTopOf="@id/btn_choice_three"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_choice_one"
+        app:layout_constraintTop_toBottomOf="@id/btn_choice_one"
         app:layout_constraintWidth_percent=".8"
         tools:text="Mobsters" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_choice_three"
+        android:id="@+id/btn_choice_three"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_choice_four"
+        app:layout_constraintBottom_toTopOf="@id/btn_choice_four"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_choice_two"
+        app:layout_constraintTop_toBottomOf="@id/btn_choice_two"
         app:layout_constraintWidth_percent=".8"
         tools:text="Firefighter" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_choice_four"
+        android:id="@+id/btn_choice_four"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_choice_three"
+        app:layout_constraintTop_toBottomOf="@id/btn_choice_three"
         app:layout_constraintWidth_percent=".8"
         tools:text="Doctor" />
 
